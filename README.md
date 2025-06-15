@@ -1,4 +1,4 @@
-[![Build and Push Docker Image](https://github.com/iLay1678/nullbr_cms_bot/actions/workflows/docker-build.yml/badge.svg)](https://github.com/iLay1678/nullbr_cms_bot/actions/workflows/docker-build.yml)
+[![Build and Push Docker Image](https://github.com/DDS-Derek/nullbr_cms_bot/actions/workflows/docker-build.yml/badge.svg)](https://github.com/DDS-Derek/nullbr_cms_bot/actions/workflows/docker-build.yml)
 # nullbr资源搜索机器人
 
 ## 简介
@@ -8,7 +8,7 @@ nullbr资源搜索机器人是一个基于Telegram的机器人，用于搜索nul
 ## 功能
 
 - 搜索nullbr资源
-- 通过CMS转存资源(只有配置了CMS相关环境变量和指定TG用户才显示转存按钮)
+- 通过MoviePilot转存资源(只有配置了MP相关环境变量和指定TG用户才显示转存按钮)
 ## 使用 Docker Compose
 
 1. 创建`docker-compose.yaml`文件：
@@ -27,8 +27,7 @@ services:
       # Telegram配置
       TG_BOT_TOKEN: 1608962238:5o45983
       TG_CHAT_ID: "123456789"
-      # CMS配置
-      CMS_BASE_URL: https://localhost
-      CMS_USERNAME: your_username_here
-      CMS_PASSWORD: your_password_here
+      # MP配置
+      MP_BASE_URL: https://localhost
+      MP_API_KEY: your_moviepilot_apikey
 ```
