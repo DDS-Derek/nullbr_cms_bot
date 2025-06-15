@@ -15,9 +15,9 @@ nullbr资源搜索机器人是一个基于Telegram的机器人，用于搜索nul
 
 ```yaml
 services:
-  nullbr_cms_bot:
-    image: ghcr.io/ilay1678/nullbr_cms_bot:latest
-    container_name: nullbr_cms_bot
+  nullbr_mp_bot:
+    image: ghcr.io/dds-derek/nullbr_mp_bot:latest
+    container_name: nullbr_mp_bot
     restart: always
     environment:
       # Nullbr配置
